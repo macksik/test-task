@@ -17,7 +17,7 @@
                     <div class="wrapper-first">
                         <input type="text" placeholder="Full name*" class="form">
                         <input type="text" placeholder="Title/Position*" class="form">              
-                        <div class="custom-select" style="margin: 5px;">
+                        <div class="custom-select" style="margin: 5px; font-size: 13px;">
                             <select>
                             <option value="0">Practice / Institution*</option>
                             <option value="1">Option 1</option>
@@ -28,8 +28,8 @@
                             </select>
                         </div>
                         <input type="email" name="email" id="" placeholder="Email Address*" class="form">
-                        <input type="number" name="number" id="" placeholder="Phone Number*" class="form">        
-                        <div class="custom-select" style="margin: 5px;">
+                        <input type="text" name="number" id="" placeholder="Phone Number*" class="form">        
+                        <div class="custom-select" style="margin: 5px; font-size: 13px; ">
                             <select>
                             <option value="0">Medical Profession*</option>
                             <option value="1">Option 1</option>
@@ -49,7 +49,7 @@
                     </div>
 
                     <div class="wrapper-four">
-                        <input type="button" value="Submit" class="button">
+                        <input type="button" value="Send Message" class="button">
                     </div>
 
                 </form>
@@ -63,10 +63,11 @@
 
 
     <script>
+        /* google map script */
         function myMap() {
         var mapProp= {
-            center:new google.maps.LatLng(51.508742,-0.120850),
-            zoom:16,
+            center:new google.maps.LatLng(43.4527883,-80.5178437),
+            zoom:13,
             disableDefaultUI: true,
         };
 
@@ -74,18 +75,22 @@
         }
 
         const marker = new google.maps.Marker({
-        position:LatLng(51.508742,-0.120850),
-        map: map,
-  });
+            position: LatLng(43.4527883,-80.5178437),
+            map: map,
+            title: "VooDoo",
+        });
 
+        
+            
        
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp4mypNUkiisiumY6NRcEiE0nOY9EuOO0&callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp4mypNUkiisiumY6NRcEiE0nOY9EuOO0&callback=myMap" defer></script>
 
 
    
     <script>
+        /* custom select script */
             var x, i, j, l, ll, selElmnt, a, b, c;
             /* Look for any elements with the class "custom-select": */
             x = document.getElementsByClassName("custom-select");

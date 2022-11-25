@@ -22,6 +22,7 @@ padding-right: 10px;
 }
 
 .all-grid {
+  padding-top: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 20px;
@@ -33,17 +34,13 @@ padding-right: 10px;
     grid-auto-rows: 64px;
 }
 
-.wrapper-second {
+.wrapper-second, .wrapper-third {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 64px;
 }
 
-.wrapper-third {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 64px;
-}
+
 
 .wrapper-four {
     display: grid;
@@ -53,30 +50,16 @@ padding-right: 10px;
 }
 
 
-.form {
+.form , .form-toi , .form-enter{
     background: #FFFFFF;
     box-shadow: 0px 8px 16px rgba(202, 203, 210, 0.70);
     border-radius: 8px;   
     color: #414042;
     margin: 5px;
+    border-color: #fff;
+    border-style: none;
 }
 
-.form-toi {
-    background: #FFFFFF;
-    box-shadow: 0px 8px 16px rgba(202, 203, 210, 0.70);
-    border-radius: 8px;   
-    color: #414042;
-    margin: 5px;
-}
-
-.form-enter {
-    background: #FFFFFF;
-    box-shadow: 0px 8px 16px rgba(202, 203, 210, 0.70);
-    border-radius: 8px;   
-    color: #414042;
-    margin: 5px;
-   
-}
 
 
 
@@ -87,6 +70,7 @@ padding-right: 10px;
     font-size: 15px;
     width: 200px;
     height: 50px;
+    cursor: pointer;
 }
 
 
@@ -99,12 +83,14 @@ padding-right: 10px;
   
   .custom-select select {
     display: none; /*hide original SELECT element: */
+    
   }
   
   .select-selected {
     background-color: #FFFFFF;
     box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
     border-radius: 8px;
+    height: 38px;
   }
   
   /* Style the arrow inside the select element: */
@@ -127,7 +113,7 @@ padding-right: 10px;
   
   /* style the items (options), including the selected item: */
   .select-items div,.select-selected {
-    color: #000;
+    color: #414042;
     padding: 8px 16px;
     border: 1px solid transparent;
     border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
@@ -185,23 +171,12 @@ padding-right: 10px;
   align-items: center;
   }
   
-  .wrapper-first {
+  .wrapper-first, .wrapper-second, .wrapper-third {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-auto-rows: 64px;
   }
   
-  .wrapper-second {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-auto-rows: 64px;
-  }
-  
-  .wrapper-third {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-auto-rows: 64px;
-  }
   
   .wrapper-four {
       display: grid;
